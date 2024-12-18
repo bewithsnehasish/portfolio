@@ -44,15 +44,8 @@ const ProjectOverview = ({ params }: { params: { projectName: string } }) => {
 
   if (!project) return notFound();
 
-  const {
-    heading,
-    subheading,
-    description,
-    imageUrl,
-    techStack,
-    liveDemoUrl,
-    sourceCodeUrl,
-  } = project;
+  const { heading, subheading, description, imageUrl, techStack, liveDemoUrl } =
+    project;
 
   return (
     <main className="flex flex-col px-5 sm:px-10 relative">
